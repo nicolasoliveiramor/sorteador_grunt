@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                     compress: true,
                 },
                 files: {
-                    'dist/styles/main.min.css': 'src/styles/main.less' // Define o caminho para a subpasta 'styles'
+                    'dist/styles/main.min.css': 'src/styles/main.less'
                 }
             }
         },
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
                         },
                         {
                             match: 'ENDERECO_DO_JS',
-                            replacement: '../scripts/main.min.js'
+                            replacement: '../src/scripts/main.js'
                         }
                     ]
                 },
@@ -56,11 +56,11 @@ module.exports = function(grunt) {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
-                            replacement: './styles/main.min.css' // Corrige o caminho para a subpasta 'styles'
+                            replacement: './styles/main.min.css'
                         },
                         {
                             match: 'ENDERECO_DO_JS',
-                            replacement: '../src/scripts/main.js'
+                            replacement: './scripts/main.min.js'
                         }
                     ]
                 },
